@@ -1,0 +1,41 @@
+name: Resize to Win
+author: chemistrying
+category: Miscellaneous
+description: "chinese University of Hong Kong CTF is an event by\nuniversity where\
+  \ everyone competes. Oh, it, weirdly,  \nhas flag RegEx which made challenge less\
+  \ guessy. We're\nkind isn't it? I will annouce it later. This CTF is held in \n\
+  2024, a favorable year for CTF. Each team can have <=\n4 members only. Anyways,\
+  \ why do we hold this event? \nchinese University of Hong Kong made these contests\n\
+  to raise awareness of cybersecurity. Now, I'll annouce\nflag format, which is the\
+  \ beautiful `cuhk24ctf{.+}`. Note:\n`{` is the 10-th character. I told you I'm nice.\
+  \ Btw, it's an\nlong 48-hour contest attempting to raise knowledges\non things related\
+  \ to cybersecurity. Hopefully after this,\nnew chapter of Hong Kong can be initiated.\
+  \ In fact, it's\ngood to know you can join this event. In particular, it's\nsuperior\
+  \ to know more cybersecurity things, because\nthe amount of cybercriminals are increasing;\
+  \ we are\noblivious about them, however. In order to solve this,\nraising awareness\
+  \ by CTF is important. Actually, this\nyear, we have 5 main categories: crypto,\
+  \ web, forens\nand rev and pwn. These categories are the utimately\ncores of cybersecurity.\
+  \ Web contains SQL injections,\nremote code execution, file upload bypass, XSS attack,\n\
+  oS command injection and even more. Forensics has\nsteganography, network packet\
+  \ analysis etc. Pwn has\ntoo much to talk so I will skip. Reverse engineering has\n\
+  inspection of assembly code. Last but not least, we have\ncrypto. It has cryptography\
+  \ algos. Lastly, I hint you that\n`}` is the last character of the flag. X Chinese\
+  \ statement."
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{longstoryacrostic}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2606\u2606\u2606\u2606"
+files: []
+version: '0.1'
+state: visible

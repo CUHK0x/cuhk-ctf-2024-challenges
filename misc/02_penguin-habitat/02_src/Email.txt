@@ -1,0 +1,12 @@
+Hello Traveller!
+
+Yes! I am now at Lido Beach. How do you know where I am right now?
+As a gift for locating me, there is something that I want to give you~
+
+cuhk24ctf{TheMi9htyPow3rOfS0cia1EngineEriNg}
+
+Congratulations! You have completed the "Penguin Habitat" challenge for the CUHK Cybersecurity CTF 2024! We hope that you enjoyed solving this special Open Source Intelligence (OSINT) challenge.
+Good luck and try hard in the rest of the CTF~
+
+Best regards,
+p3n9uin

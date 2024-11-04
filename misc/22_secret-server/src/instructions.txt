@@ -1,0 +1,10 @@
+```
+Please follow the following instructions in order to get verified:
+1. Go to our flag submission platform (24.cuhkctf.org).
+2. Click "Settings" in the navigation bar.
+3. Click "Access Token" on the left panel.
+4. Click "Generate" button and copy the access token.
+5. Type slash command "/request" and send the access token to get verified.
+
+The above procedure is to verify your identity. You can safely remove the access token by clicking the 'x' button on the platform after the verification process.
+```

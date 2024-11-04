@@ -1,0 +1,27 @@
+name: krev
+author: ky1ebot
+category: Reverse Engineering
+description: 'This is not your classic simple easy-peasy rev challenge.
+
+  Well, it is still easy, but in the kernel :P
+
+  Enjoy your first hands-on experience with the Linux kernel.'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24040
+flags:
+- cuhk24ctf{f1r57_3nc0un73r_w17h_7h3_l1nux_k3rn3l}
+tags:
+- 'Author: ky1ebot'
+- "\u2605\u2605\u2605\u2605\u2605"
+files:
+- 40_krev_e8f02de647eaecefb508cbdefd8d02f6.zip
+version: '0.1'
+state: visible

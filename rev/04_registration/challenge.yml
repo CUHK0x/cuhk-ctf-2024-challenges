@@ -1,0 +1,23 @@
+name: Registration
+author: p3n9uin
+category: Reverse Engineering
+description: One into two, two into four, and so on...
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24004
+flags:
+- cuhk24ctf{eax_n_xor_OH_THEY_LEAK_SECRETSSSSSS_qbGxXo5}
+tags:
+- 'Author: p3n9uin'
+- "\u2605\u2606\u2606\u2606\u2606"
+files:
+- 04_registration_a1592e31269a5c340b59349229edc28d.zip
+version: '0.1'
+state: visible

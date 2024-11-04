@@ -1,0 +1,25 @@
+name: Meandering Binaries
+author: FieryRMS
+category: Forensics
+description: 'Oh no! My friend Hilbert ruined my favorite stock image of Mount Everest!
+  D: Oh, what shall I do now?! He says he hid a QR code somewhere. (An image inside
+  an image??) Can you figure out what he did?'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{oMg-aRt-uSiNg-bInaRy-vIsuAlIzeRs-nOwAyYyYY}
+tags:
+- 'Author: FieryRMS'
+- "\u2605\u2605\u2605\u2606\u2606"
+files:
+- 46_meandering-binaries_d0aa7fd56d78185f6788d91ed204eb42.zip
+version: '0.1'
+state: visible

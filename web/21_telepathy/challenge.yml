@@ -1,0 +1,26 @@
+name: Telepathy
+author: chemistrying
+category: Web Exploitation
+description: 'WIP telepathy webpage
+
+
+  Note: the additional flag format for this problem is `cuhk24ctf{[\w\x20\x2d\x5c]+}`'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: http
+host: null
+connection_info: localhost:24021
+flags:
+- cuhk24ctf{Gulus_says_Bruh-_-ju5t_us3_pr3pAred_s1mt_br0_7c1e1bbaf07fa9d2340a08c9f57a7322}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2605\u2605\u2606\u2606"
+files:
+- 21_telepathy_3b91341b1ca1b5d93bd3a8ef66a54667.zip
+version: '0.1'
+state: visible

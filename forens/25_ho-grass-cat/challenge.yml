@@ -1,0 +1,25 @@
+name: Ho Grass Cat
+author: rain251
+category: Forensics
+description: "Ho Grass Cat (\u4F55\u8349\u8C93) wants to tell you the flag, can you\
+  \ read it?\n(It is the problem of the audio player if you can only hear from one\
+  \ ear)"
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{XuD!0_3a_er@MaRk}
+tags:
+- 'Author: rain251'
+- "\u2605\u2606\u2606\u2606\u2606"
+files:
+- 25_ho-grass-cat_87b2fd512f3ad129483da6ac2e1cc577.zip
+version: '0.1'
+state: visible

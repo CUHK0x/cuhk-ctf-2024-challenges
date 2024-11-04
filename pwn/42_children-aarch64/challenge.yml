@@ -1,0 +1,25 @@
+name: children-aarch64
+author: ky1ebot
+category: Binary Exploitation
+description: 'Wait a second, isn''t this challenge exactly the same as baby-aarch64?
+
+  Oh, is it? ;)'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24042
+flags:
+- cuhk24ctf{bu7_r0p_1n_44rch64_15_n07_7h47_fun_XD}
+tags:
+- 'Author: ky1ebot'
+- "\u2605\u2605\u2605\u2605\u2606"
+files:
+- 42_children-aarch64_1296f4c254716c5d1969fc7737c0ae69.zip
+version: '0.1'
+state: visible

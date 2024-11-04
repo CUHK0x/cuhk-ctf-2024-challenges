@@ -1,0 +1,22 @@
+name: Burpmon
+author: chemistrying
+category: Web Exploitation
+description: Gammamon
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: http
+host: null
+connection_info: localhost:24020
+flags:
+- cuhk24ctf{Did_U_BURP_to_GET_FLAG_frum_gammAAAAAAAAAAAAAAAAAAAAAAAAAmon_asdflk;dkjfkl;j}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2606\u2606\u2606\u2606"
+files: []
+version: '0.1'
+state: visible

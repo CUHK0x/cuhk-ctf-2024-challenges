@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Messages</title>
+</head>
+<body>
+    <h1>Message to the principal:</h1>
+    <p>
+        {# Allow students to express their love in HTML, so no need escaping; #}
+        {# we already filtered out the naughty kids #}
+        {% autoescape false %}
+        {{ message }}
+        {% endautoescape %}
+    </p>
+</body>
+</html>

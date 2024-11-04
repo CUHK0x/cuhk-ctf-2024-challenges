@@ -1,0 +1,24 @@
+name: In Dialogue with Crypto
+author: chemistrying
+category: Cryptography
+description: Trust me, it's a 1000-level crypto problem (I mean it's very beginner
+  friendly, I guess).
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{HALLO_uwu_kvnow_da_tor1cku_ando_da_essenzi_ofu_smol_exp_atta3kuwu_vary_fevvy_guud}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2605\u2606\u2606\u2606"
+files:
+- 23_in-dialogue-with-crypto_2c5042372308647fbeff59f2a95f5888.zip
+version: '0.1'
+state: visible

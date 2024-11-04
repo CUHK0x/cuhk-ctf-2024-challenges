@@ -1,0 +1,26 @@
+name: Pokemon
+author: chemistrying
+category: Web Exploitation
+description: I found that there are infiltrators on this pokemon comparator website!
+  They secretly added Flagmon (a new digimon OC) somewhere in their serivce... I obtained
+  the passcode `dish-percent-drop-brief` from their source code, but by the time I
+  tried to download their source code, they have already removed it... Can you help
+  me and find Flagmon? You will be rewarded with a flag once you have found it.
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: http
+host: null
+connection_info: localhost:24049
+flags:
+- cuhk24ctf{WowoW_u_know_gwAphQL_pitty_well_Want_to_say'Congratuwulations_"hacker"!'-\_/-_for_finding_Fa1gm0n}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2605\u2605\u2605\u2606"
+files: []
+version: '0.1'
+state: visible

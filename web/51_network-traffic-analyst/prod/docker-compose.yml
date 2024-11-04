@@ -1,0 +1,6 @@
+services:
+  network-traffic-analyst:
+    build: 
+      context: ./src
+    ports:
+      - 24051:3000

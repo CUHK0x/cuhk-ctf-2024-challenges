@@ -1,0 +1,25 @@
+name: Cryptic Tears
+author: FieryRMS
+category: Reverse Engineering
+description: My favorite 12yo nephew made an encryption algorithm. He says it's unbreakable
+  because he didn't make a decryption algorithm and deleted the source code. He encrypted
+  a very important file now he is crying. Can you help him?
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{we1L_y0u_rEv3rSeD_tHe_pR0gRaM_bUt_n0W_mY_nEpH3w_1s_g0nNa_b3_mAd_tHaT_yOu_cR4ck3d_h1s_3NcRypTi0N_bUt_1_sAy_WoMp_w0Mp_gIt_gUd_k1d_lMa0O}
+tags:
+- 'Author: FieryRMS'
+- "\u2605\u2605\u2605\u2606\u2606"
+files:
+- 47_cryptic-tears_b3756dbd6546d261d2f56c0563a56172.zip
+version: '0.1'
+state: visible

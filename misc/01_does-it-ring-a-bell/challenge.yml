@@ -1,0 +1,27 @@
+name: Does it ring a bell?
+author: p3n9uin
+category: Miscellaneous
+description: '**Specific flag format applies: `cuhk24ctf{[a-zA-Z0-9_]+}`**
+
+  p3n9uin is too lazy, he just decided that modifying [this challenge](https://github.com/blackb6a/hkcert-ctf-2021-challenges/tree/master/36-excel)
+  and performing ROT47 on the whole outcome would be enough to deter participants
+  from getting the flag...'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{reV_And_ROT_in_eXc31}
+tags:
+- 'Author: p3n9uin'
+- "\u2605\u2605\u2605\u2606\u2606"
+files:
+- 01_does-it-ring-a-bell_6ab4cb360371211920659abe6ef5d341.zip
+version: '0.1'
+state: visible

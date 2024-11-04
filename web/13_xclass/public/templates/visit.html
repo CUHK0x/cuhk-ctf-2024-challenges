@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit a site</title>
+</head>
+<body>
+    <h1>Tell principal to check his inbox!</h1>
+    <form action="/visit" method="post"><label for="inputUrl"></label><input type="text" name="url" id="inputUrl"><input type="submit" value="Submit"></form>
+    {% if hint %}
+    <strong style="color: red">{{ hint }}</strong>
+    {% endif %}
+</body>
+</html>

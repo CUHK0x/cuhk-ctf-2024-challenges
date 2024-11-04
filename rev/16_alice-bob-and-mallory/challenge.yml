@@ -1,0 +1,26 @@
+name: Alice, Bob and Mallory
+author: chemistrying
+category: Reverse Engineering
+description: You are Mallory. One day, you see Alice happily presents her square-root
+  program to Bob, which seems to function properly and no longer disappoints her mother.
+  However, you want to make her sad and get her flag, which is her family's heirloom.
+  Please hack her program and get the valuable heirloom.
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24016
+flags:
+- cuhk24ctf{Un0_tH3_r3v_trIck_AsT1Ey_oF_hqckin9_c_or_cpp_meTh}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2605\u2606\u2606\u2606"
+files:
+- 16_alice-bob-and-mallory_50c1a921f3c8a4a202a41b102c990eb4.zip
+version: '0.1'
+state: visible

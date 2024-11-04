@@ -1,0 +1,24 @@
+name: Marker
+author: chemistrying
+category: Forensics
+description: I have used alchohol markers to practice sketching in Adobe Fresco, could
+  you give me some comments about it?
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{dONt_D9_tH1s_T0_C3n5or_MaRkErUnSaFeSo4}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2605\u2606\u2606\u2606"
+files:
+- 52_marker_97197ef60c4de8f8b22a447263efe17e.zip
+version: '0.1'
+state: visible

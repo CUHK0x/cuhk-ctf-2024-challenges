@@ -1,0 +1,24 @@
+name: baby-aarch64
+author: ky1ebot
+category: Binary Exploitation
+description: 'The world has too much x86 BS. Today, let''s embrace the TRUE ONE architecture.
+  Let''s welcome: aarch64!'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24038
+flags:
+- cuhk24ctf{44rch64_5h3llc0d3_15_50_fun!}
+tags:
+- 'Author: ky1ebot'
+- "\u2605\u2605\u2605\u2606\u2606"
+files:
+- 38_baby-aarch64_0a199935323b309015fc91ede0445a78.zip
+version: '0.1'
+state: visible

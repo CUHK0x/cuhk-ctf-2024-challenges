@@ -1,0 +1,10 @@
+services:
+  heapy:
+    build: .
+    ports:
+      - 24041:9999
+    networks:
+      - default
+
+networks:
+  default:

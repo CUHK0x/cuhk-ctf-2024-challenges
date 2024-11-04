@@ -1,0 +1,26 @@
+name: Placeholder
+author: chemistrying
+category: Miscellaneous
+description: 'I committed the flag to my private fork which is forked from one of
+  my organization''s repository
+
+
+  ![img](https://i.imgur.com/guxPtUZ.png)'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{geet_fork___3_c0mwit_pub11c_eVery1_kNoWs_CAAANT_hid_s3cr3t_BEWAaAaaaaAAaRE}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2605\u2605\u2606\u2606"
+files: []
+version: '0.1'
+state: visible

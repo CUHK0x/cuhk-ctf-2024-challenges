@@ -1,0 +1,25 @@
+name: heapy
+author: ky1ebot
+category: Binary Exploitation
+description: 'Are you ready to venture into the wild west world of heaps?
+
+  Seize the chance and start staring at how2heap! XD!'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24041
+flags:
+- cuhk24ctf{n0w_y0u_4r3_4_m4573r_0f_p7m4ll0c}
+tags:
+- 'Author: ky1ebot'
+- "\u2605\u2605\u2605\u2605\u2605"
+files:
+- 41_heapy_c61088293d3b94597440a700407d5e3d.zip
+version: '0.1'
+state: visible

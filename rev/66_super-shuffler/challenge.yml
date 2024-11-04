@@ -1,0 +1,27 @@
+name: Super Shuffler
+author: F21endSh1p
+category: Reverse Engineering
+description: 'There is nothing super about this.
+
+
+  *Note: The program stops after 60 seconds, even when it does not look like it. You
+  might want quick hands (or clever thinking!) for this.*'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24066
+flags:
+- cuhk24ctf{HAIYYYA_It_is_a1ReAdy_2024_wHY_IS_tvb_S7Ill_s60WIng_KInG_0F_gAmblERs_btw_WhAt_IS_Dis_3tty_g!me_ThE_CArDs_D0NT_EvEN_Hv_Suits}
+tags:
+- 'Author: F21endSh1p'
+- "\u2605\u2605\u2606\u2606\u2606"
+files:
+- 66_super-shuffler_3ff51ac42c506e9d519611a33fa4ab61.zip
+version: '0.1'
+state: visible

@@ -1,0 +1,24 @@
+name: baby-rop
+author: ky1ebot
+category: Binary Exploitation
+description: Welcome to the CUHK CTF party. Let's take it easy and start with something
+  simple. Let's ROP!
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24037
+flags:
+- cuhk24ctf{347_5l33p_r0p_r3p347}
+tags:
+- 'Author: ky1ebot'
+- "\u2605\u2605\u2605\u2606\u2606"
+files:
+- 37_baby-rop_77f7a6bdd110ab3fcc60c15ec87e9e72.zip
+version: '0.1'
+state: visible

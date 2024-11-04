@@ -1,0 +1,23 @@
+name: Winner Winner
+author: Mystiz
+category: Cryptography
+description: Chicken Dinner!
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{th1s_15_ju5t_4_s1mp13_7w1s7_0f_w13n3r_4t74ck}
+tags:
+- 'Author: Mystiz'
+- "\u2605\u2605\u2605\u2606\u2606"
+files:
+- 32_winner-winner_e45ff112307bd2cfe063cb2896a67ac3.zip
+version: '0.1'
+state: visible

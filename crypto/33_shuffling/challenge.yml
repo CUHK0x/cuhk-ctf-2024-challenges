@@ -1,0 +1,24 @@
+name: Shuffling
+author: Mystiz
+category: Cryptography
+description: I can decrypt ciphertexts you send. The catch is, the message bits will
+  be shuffled.
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24033
+flags:
+- cuhk24ctf{we_are_leaking_something_from_the_oracle_nonetheless}
+tags:
+- 'Author: Mystiz'
+- "\u2605\u2605\u2605\u2605\u2606"
+files:
+- 33_shuffling_d4dfce57d3f648bd62559eea8b254cd4.zip
+version: '0.1'
+state: visible

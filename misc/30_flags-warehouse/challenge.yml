@@ -1,0 +1,24 @@
+name: Flags Warehouse
+author: rain251
+category: Miscellaneous
+description: The author of this challenge accidentally mixed up some fake flags with
+  the real flag, can you help him to find out the real flag?
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{XdtLac(_qvqYoDjx@}
+tags:
+- 'Author: rain251'
+- "\u2605\u2606\u2606\u2606\u2606"
+files:
+- 30_flags-warehouse_f5cfc2bb90b00d71bc85759329992a75.zip
+version: '0.1'
+state: visible

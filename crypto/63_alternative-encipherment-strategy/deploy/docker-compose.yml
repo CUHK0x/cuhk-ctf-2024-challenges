@@ -1,0 +1,5 @@
+services:
+  aes:
+    build: .
+    ports:
+      - 24063:3000

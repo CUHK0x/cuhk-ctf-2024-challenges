@@ -1,0 +1,10 @@
+services:
+  indonesian-culture:
+    build: .
+    ports:
+      - 24003:1337
+    networks:
+      - default
+
+networks:
+  default:

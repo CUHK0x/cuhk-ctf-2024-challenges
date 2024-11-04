@@ -1,0 +1,24 @@
+name: Secret Menu
+author: rain251
+category: Forensics
+description: "Do you know Orchid Lodge(\u862D\u5712) in CUHK has some secret menu,\
+  \ maybe also a secret flag under its menu?"
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{Is_Hoi_Luk_Hung_Bou}
+tags:
+- 'Author: rain251'
+- "\u2605\u2606\u2606\u2606\u2606"
+files:
+- 27_secret-menu_ff2f1404c9c53db2ce36e23b92d13d52.zip
+version: '0.1'
+state: visible

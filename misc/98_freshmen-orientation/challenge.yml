@@ -1,0 +1,31 @@
+name: Freshmen Orientation
+author: p3n9uin
+category: Miscellaneous
+description: 'Welcome to the CUHK Cybersecurity CTF 2024 competition! Have fun and
+  try hard with all the questions that the authors have created for you!
+
+  The flag for this challenge can be found somewhere inside the competition rules
+  posted on the Discord server.
+
+
+  Oh yes, have you joined [our competition''s Discord server](https://discord.com/invite/cR9J7f3r6c)
+  yet? Discord is our primary platform of communication, support, and chatter during
+  the competition. Join our server now!'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{our_f1rst_ev3r_CUHK_CTF_YAYYYYY}
+tags:
+- 'Author: p3n9uin'
+- "\u2606\u2606\u2606\u2606\u2606"
+files: []
+version: '0.1'
+state: visible

@@ -1,0 +1,26 @@
+name: Secret Server
+author: chemistrying
+category: Miscellaneous
+description: 'Oh no! Our Discord link to the secret server for our internal staff
+  members has been leaked! I wonder what flags there are...
+
+
+  https://discord.gg/YpHW8bVF8t'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{prIv_e5cAlaT1on_thru_wrongly_ordered_rolEs_inn_DC_YOU_SHOULD_BEWARE_OF_THIS_VULN111111AAAAA}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2606\u2606\u2606\u2606"
+files: []
+version: '0.1'
+state: visible

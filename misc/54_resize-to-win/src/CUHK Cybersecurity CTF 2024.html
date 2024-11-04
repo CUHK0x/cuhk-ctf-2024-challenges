@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://24.cuhkctf.org/challenges#Resize%20to%20Win-27 -->
+<html data-bs-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CUHK Cybersecurity CTF 2024</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://24.cuhkctf.org/themes/neon/static/img/favicon.ico?d=6fdf0ac5" type="image/x-icon">
+    
+
+
+    <link rel="stylesheet" href="./CUHK Cybersecurity CTF 2024_files/fonts.min.css">
+    <link rel="stylesheet" href="./CUHK Cybersecurity CTF 2024_files/core.min.css">
+    
+  
+      <link rel="stylesheet" href="./CUHK Cybersecurity CTF 2024_files/main-1c5ca71a.css">
+      <link rel="stylesheet" href="./CUHK Cybersecurity CTF 2024_files/style.dev-17416d47.css">
+    
+
+  <link rel="stylesheet" href="./CUHK Cybersecurity CTF 2024_files/challenge-board.min.css">
+
+    <link rel="stylesheet" href="./CUHK Cybersecurity CTF 2024_files/bootstrap4-neon-glow.min.css">
+
+    <link rel="stylesheet" href="./CUHK Cybersecurity CTF 2024_files/hack.min.css">
+    
+    
+
+    
+
+    <script src="./CUHK Cybersecurity CTF 2024_files/color_mode_switcher-4b183ed3.js.download"></script>
+
+    <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "82dd008d31bdc0bafad51d87ada8983c8ced0616cf339c2d13d053d5ac12e35f",
+          'userMode': "teams",
+          'userId': 352,
+          'userName': "Observers",
+          'userEmail': "observers@gmail.com",
+          'teamId': 119,
+          'teamName': "Observers",
+          'start': 1728694800,
+          'end': 1728824400,
+          'themeSettings': null,
+          'eventSounds': [
+            "/themes/core/static/sounds/notification.webm",
+            "/themes/core/static/sounds/notification.mp3",
+          ],
+      }
+    </script>
+    <script>
+ function getTimeLeftString(future) {
+    // Get today's date and time
+    var now = new Date();
+
+    // Find the distance between now and the count down date
+    var distance = future.getTime() - now.getTime();
+    // If the count down is finished, write some text
+    if (distance < 0) {
+        return null;
+    }
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Display the result in the element with id="countdown"
+    return days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+}
+
+function setCountdownDisplays() {
+    countdowns = document.getElementsByClassName("countdown");
+    for (let el of countdowns) {
+        countdown_str = getTimeLeftString(new Date(el.dataset.target));
+        if (countdown_str != null) {
+            el.innerText = countdown_str;
+        } else {
+            el.innerText = el.dataset.endString;
+            clearInterval(x);
+        }
+    }
+}
+setCountdownDisplays();
+// Update the count down every 1 second
+var x = setInterval(setCountdownDisplays, 1000);
+</script>
+  </head>
+
+  <body class="modal-open" style="padding-right: 17px;">
+      <div class="container-fluid">
+    <div class="navbar navbar-expand-md flex-wrap">
+      <a href="https://24.cuhkctf.org/" class="navbar-brand text-light">
+        <span class="ht-tm-navbar-title font-weight-bold">CUHK Cybersecurity CTF 2024</span>
+      </a>
+      <nav class="navbar-nav mr-auto">
+        <a href="https://24.cuhkctf.org/" class="text-decoration-none text-light nav-link">Home</a>
+        
+        <a class="text-decoration-none text-light nav-link" href="https://24.cuhkctf.org/rules">Rules</a>
+        
+
+        
+        <a class="text-decoration-none text-light nav-link" href="https://24.cuhkctf.org/users">Users</a>
+        
+        <a class="text-decoration-none text-light nav-link" href="https://24.cuhkctf.org/teams">Teams</a>
+        
+        
+
+        
+        <a class="text-decoration-none text-light nav-link" href="https://24.cuhkctf.org/scoreboard">Scoreboard</a>
+        
+        <a class="text-decoration-none text-light nav-link" href="https://24.cuhkctf.org/challenges">Challenges</a>
+        <a class="text-decoration-none text-light nav-link" href="https://24.cuhkctf.org/notifications">Notifications</a>
+      </nav>
+      <div class="ht-tm-element btn-group ml-auto">
+        
+        
+        
+        <a class="btn btn-sm btn-outline-light" href="https://24.cuhkctf.org/team">
+          <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Team">
+            <i class="fas fa-users d-none d-md-block d-lg-none"></i>
+          </span>
+          <span class="d-sm-block d-md-none d-lg-block">
+            <i class="fas fa-users pr-1"></i>Team
+          </span>
+        </a>
+        
+        <a class="btn btn-sm btn-outline-light" href="https://24.cuhkctf.org/user">
+          <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Profile">
+            <i class="fas fa-user-circle d-none d-md-block d-lg-none"></i>
+          </span>
+          <span class="d-sm-block d-md-none d-lg-block">
+            <i class="fas fa-user-circle pr-1"></i>Profile
+          </span>
+        </a>
+        <a class="btn btn-sm btn-outline-light" href="https://24.cuhkctf.org/settings">
+          <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Settings">
+            <i class="fas fa-cogs d-none d-md-block d-lg-none"></i>
+          </span>
+          <span class="d-sm-block d-md-none d-lg-block">
+            <i class="fas fa-cogs pr-1"></i>Settings
+          </span>
+        </a>
+        <a class="btn btn-sm btn-outline-light" href="https://24.cuhkctf.org/logout">
+          <span class="d-block" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Logout">
+            <i class="fas fa-sign-out-alt d-none d-md-block d-lg-none"></i>
+          </span>
+          <span class="d-sm-block d-md-none d-lg-block">
+            <i class="fas fa-sign-out-alt pr-1"></i>
+            <span class="d-lg-none">Logout</span>
+          </span>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+    <main role="main">
+      
+  <div class="container py-5">
+    <h1 class="text-center">Challenges<span class="vim-caret">&nbsp;&nbsp;</span>
+    </h1>
+  </div>
+
+  <div class="modal fade show" id="challenge-window" tabindex="-1" role="dialog" style="padding-right: 17px; display: block;" aria-modal="true"><div class="modal-dialog" role="document">
+	<div class="modal-content">
+		<div class="modal-body">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">×</span>
+			</button>
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a class="nav-link active" href="https://24.cuhkctf.org/challenges#challenge">Challenge</a>
+				</li>
+				
+					<li class="nav-item">
+						<a class="nav-link challenge-solves" href="https://24.cuhkctf.org/challenges#solves">
+							
+								34 Solves
+							
+						</a>
+					</li>
+				
+			</ul>
+			<div role="tabpanel">
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade show active" id="challenge">
+						<h2 class="challenge-name text-center pt-3">
+							Resize to Win
+						</h2>
+						<h3 class="challenge-value text-center">
+							131
+						</h3>
+
+						<div class="challenge-tags text-center">
+							
+								
+									<span class="badge badge-info challenge-tag">Author: chemistrying</span>
+								
+									<span class="badge badge-info challenge-tag">★☆☆☆☆</span>
+								
+							
+						</div>
+
+						<span class="challenge-desc"><p>chinese University of Hong Kong CTF is an event by
+university where everyone competes. Oh, it, weirdly,<br>
+has flag RegEx which made challenge less guessy. We're
+kind isn't it? I will annouce it later. This CTF is held in
+2024, a favorable year for CTF. Each team can have &lt;=
+4 members only. Anyways, why do we hold this event?
+chinese University of Hong Kong made these contests
+to raise awareness of cybersecurity. Now, I'll annouce
+flag format, which is the beautiful <code>cuhk24ctf{.+}</code>. Note:
+<code>{</code> is the 10-th character. I told you I'm nice. Btw, it's an
+long 48-hour contest attempting to raise knowledges
+on things related to cybersecurity. Hopefully after this,
+new chapter of Hong Kong can be initiated. In fact, it's
+good to know you can join this event. In particular, it's
+superior to know more cybersecurity things, because
+the amount of cybercriminals are increasing; we are
+oblivious about them, however. In order to solve this,
+raising awareness by CTF is important. Actually, this
+year, we have 5 main categories: crypto, web, forens
+and rev and pwn. These categories are the utimately
+cores of cybersecurity. Web contains SQL injections,
+remote code execution, file upload bypass, XSS attack,
+oS command injection and even more. Forensics has
+steganography, network packet analysis etc. Pwn has
+too much to talk so I will skip. Reverse engineering has
+inspection of assembly code. Last but not least, we have
+crypto. It has cryptography algos. Lastly, I hint you that
+<code>}</code> is the last character of the flag. X Chinese statement.</p>
+</span>
+
+						<span class="challenge-connection-info">
+							
+								
+								
+								
+							
+						</span>
+
+						<div class="challenge-hints hint-row row">
+							
+						</div>
+
+						<div class="row challenge-files text-center pb-3">
+							
+						</div>
+
+						
+
+						<div class="row submit-row">
+							<div class="col-md-9 form-group">
+								
+									<input id="challenge-id" class="challenge-id" type="hidden" value="27">
+									<input id="challenge-input" class="challenge-input form-control" type="text" name="answer" placeholder="Flag">
+								
+							</div>
+							<div class="col-md-3 form-group key-submit">
+								
+								<button id="challenge-submit" class="challenge-submit btn btn-md btn-outline-secondary float-right" type="submit">
+									Submit
+								</button>
+								
+							</div>
+						</div>
+
+						<div class="row notification-row">
+							<div class="col-md-12">
+								<div id="result-notification" class="alert alert-dismissable text-center w-100" role="alert" style="display: none;">
+									<strong id="result-message"></strong>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane fade" id="solves">
+						<div class="row">
+							<div class="col-md-12">
+								<table class="table table-striped text-center">
+									<thead>
+									<tr>
+										<td><b>Name</b>
+										</td>
+										<td><b>Date</b>
+										</td>
+									</tr>
+									</thead>
+									<tbody id="challenge-solves-names">
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+
+    <div class="alert alert-info alert-dismissable text-center" role="alert">
+        <span>CUHK Cybersecurity CTF 2024 has ended</span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+
+
+</div>
+      </div>
+    </div>
+
+    <div id="challenges-board"><div id="1404598883-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>Web Exploitation</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="1904037755" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="1"><p>Burpmon</p><span>100</span></button></div><div id="-233669965" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="11"><p>Network Traffic Analyst</p><span>100</span></button></div><div id="-1710411776" class="col-md-3 d-inline-block tag-Author:-F21endSh1p tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="8"><p>XClass</p><span>344</span></button></div><div id="1265620147" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★★★★☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="9"><p>Pokemon</p><span>483</span></button></div><div id="-1508001942" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="12"><p>Telepathy</p><span>500</span></button></div><div id="1064558965" class="col-md-3 d-inline-block tag-Author:-F21endSh1p tag-Difficulty:-★★★★☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="42"><p>Friends</p><span>500</span></button></div></div></div></div><div id="1578129676-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>Cryptography</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="1132906028" class="col-md-3 d-inline-block tag-Author:-rain251 tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="38"><p>Laboratory Safety</p><span>100</span></button></div><div id="-1445069749" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="41"><p>Safe Cipher</p><span>108</span></button></div><div id="-984321285" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="6"><p>In Dialogue with Crypto</p><span>285</span></button></div><div id="-1422905010" class="col-md-3 d-inline-block tag-Author:-Jackylkk2003 tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="40"><p>Alternative Encipherment Strategy</p><span>389</span></button></div><div id="-798584435" class="col-md-3 d-inline-block tag-Author:-Mystiz tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="36"><p>Winner Winner</p><span>474</span></button></div><div id="718430265" class="col-md-3 d-inline-block tag-Author:-Mystiz tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="39"><p>MultiDES</p><span>483</span></button></div><div id="650226006" class="col-md-3 d-inline-block tag-Author:-Mystiz tag-★★★★☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="37"><p>Shuffling</p><span>500</span></button></div></div></div></div><div id="1295842966-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>Binary Exploitation</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="-871378927" class="col-md-3 d-inline-block tag-Author:-p3n9uin tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="22"><p>King of Tears</p><span>169</span></button></div><div id="-1313620126" class="col-md-3 d-inline-block tag-Author:-F21endSh1p tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="20"><p>Whisper</p><span>257</span></button></div><div id="2104088668" class="col-md-3 d-inline-block tag-Author:-ky1ebot tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="23"><p>baby-rop</p><span>453</span></button></div><div id="-286572738" class="col-md-3 d-inline-block tag-Author:-ky1ebot tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="18"><p>baby-aarch64</p><span>492</span></button></div><div id="99151885" class="col-md-3 d-inline-block tag-Author:-ky1ebot tag-★★★★★"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="19"><p>heapy</p><span>500</span></button></div><div id="-1823822833" class="col-md-3 d-inline-block tag-Author:-F21endSh1p tag-★★★★☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="21"><p>Scream</p><span>500</span></button></div><div id="1597267815" class="col-md-3 d-inline-block tag-Author:-ky1ebot tag-★★★★☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="24"><p>children-aarch64</p><span>500</span></button></div></div></div></div><div id="1381982312-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>Reverse Engineering</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="-88826861" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="14"><p>Alice, Bob and Mallory</p><span>131</span></button></div><div id="-1523660149" class="col-md-3 d-inline-block tag-Author:-p3n9uin tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="2"><p>Indonesian Culture</p><span>147</span></button></div><div id="3300440" class="col-md-3 d-inline-block tag-Author:-ky1ebot tag-★★★★★"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="13"><p>krev</p><span>359</span></button></div><div id="-1185989415" class="col-md-3 d-inline-block tag-Author:-p3n9uin tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="16"><p>Registration</p><span>453</span></button></div><div id="712447723" class="col-md-3 d-inline-block tag-Author:-F21endSh1p tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="17"><p>Super Shuffler</p><span>453</span></button></div><div id="-1432346868" class="col-md-3 d-inline-block tag-Author:-FieryRMS tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="15"><p>Cryptic Tears</p><span>500</span></button></div></div></div></div><div id="-696475816-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>Forensics</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="-1997438886" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="5"><p>Marker</p><span>100</span></button></div><div id="-517113383" class="col-md-3 d-inline-block tag-Author:-rain251 tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="35"><p>Ho Grass Cat</p><span>100</span></button></div><div id="-415059364" class="col-md-3 d-inline-block tag-Author:-rain251 tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="33"><p>Secret Menu</p><span>299</span></button></div><div id="2071119601" class="col-md-3 d-inline-block tag-Author:-rain251 tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="32"><p>I go to main campus on foot</p><span>464</span></button></div><div id="1737250497" class="col-md-3 d-inline-block tag-Author:-F21endSh1p tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="31"><p>After I accidentally deleted my super secret stash, I panicked and went ahead...</p><span>492</span></button></div><div id="182055446" class="col-md-3 d-inline-block tag-Author:-FieryRMS tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="34"><p>Meandering Binaries</p><span>492</span></button></div></div></div></div><div id="-1890823218-row" class="pt-5"><div class="category-header col-md-12 mb-3"><h3>Miscellaneous</h3></div><div class="category-challenges col-md-12"><div class="challenges-row col-md-12"><div id="666216125" class="col-md-3 d-inline-block tag-Author:-rain251 tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="26"><p>Flags Warehouse</p><span>100</span></button></div><div id="-1672512149" class="col-md-3 d-inline-block tag-Author:-p3n9uin tag-☆☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="29"><p>Freshmen Orientation</p><span>100</span></button></div><div id="-1706217586" class="col-md-3 d-inline-block tag-Author:-p3n9uin tag-☆☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="30"><p>Graduation</p><span>100</span></button></div><div id="1090137219" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="27"><p>Resize to Win</p><span>131</span></button></div><div id="731808000" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★☆☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="3"><p>Secret Server</p><span>141</span></button></div><div id="-2028851885" class="col-md-3 d-inline-block tag-Author:-chemistrying tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="25"><p>Placeholder</p><span>196</span></button></div><div id="-2007565626" class="col-md-3 d-inline-block tag-Author:-p3n9uin tag-★★☆☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="4"><p>Penguin Habitat</p><span>299</span></button></div><div id="51677889" class="col-md-3 d-inline-block tag-Author:-p3n9uin tag-★★★☆☆"><button class="btn btn-dark challenge-button w-100 text-truncate pt-3 pb-3 mb-2" value="28"><p>Does it ring a bell?</p><span>429</span></button></div></div></div></div></div>
+  </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <a href="https://ctfd.io/" class="text-secondary">
+          <small class="text-muted">Powered by CTFd</small>
+        </a>
+      </div>
+    </footer>
+
+    <script defer="defer" src="./CUHK Cybersecurity CTF 2024_files/vendor.bundle.min.js.download"></script>
+    <script defer="defer" src="./CUHK Cybersecurity CTF 2024_files/helpers.min.js.download"></script>
+
+    
+  <script defer="defer" src="./CUHK Cybersecurity CTF 2024_files/challenges.min.js.download"></script>
+
+
+    
+
+    
+
+    
+  <script defer="" src="./CUHK Cybersecurity CTF 2024_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8d2dffa23d16ddc0&quot;,&quot;version&quot;:&quot;2024.10.1&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;96e984af20f44a87a1f1b5224cd7bb0f&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./CUHK Cybersecurity CTF 2024_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:false,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><div class="modal-backdrop fade show"></div></body></html>

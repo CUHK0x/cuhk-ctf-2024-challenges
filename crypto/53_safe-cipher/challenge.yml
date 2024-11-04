@@ -1,0 +1,25 @@
+name: Safe Cipher
+author: chemistrying
+category: Cryptography
+description: If you think having UGFC1000 (In Dialogue with Crypto) is too difficult,
+  consider having more dialogue with crypto. If you brute force the cipher key, you
+  need to try $\left(2^8\right)^{30}$ times, so it's safe.
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{lon9_prefis_kind_o7_iNtRe5t1n}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2606\u2606\u2606\u2606"
+files:
+- 53_safe-cipher_083ba57cb8e49461e15f0dc69ab1d547.zip
+version: '0.1'
+state: visible

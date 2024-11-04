@@ -1,0 +1,24 @@
+name: Friends
+author: F21endSh1p
+category: Web Exploitation
+description: Want to stalk people but can't handle all the photos and troubling relationships?
+  Try my new FriendsPage! (trademark pending)
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: http
+host: null
+connection_info: localhost:24014
+flags:
+- cuhk24ctf{k33p_y0uR_prIVa5E_Par1s_a8_fR0m_Fr1eNDS}
+tags:
+- 'Author: F21endSh1p'
+- "\u2605\u2605\u2605\u2605\u2606"
+files:
+- 14_friends_b0c59250b0c63121cb0232dbf7191c7a.zip
+version: '0.1'
+state: visible

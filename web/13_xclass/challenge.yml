@@ -1,0 +1,24 @@
+name: XClass
+author: F21endSh1p
+category: Web Exploitation
+description: I heard schools are having so much fun using that \*Class system! So
+  I built one on my own, called **XClass**! (X again!? what an ominous name)
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: http
+host: null
+connection_info: localhost:24013
+flags:
+- cuhk24ctf{XclaSS-iS-a-SeCURe-SIte}
+tags:
+- 'Author: F21endSh1p'
+- "\u2605\u2605\u2606\u2606\u2606"
+files:
+- 13_xclass_687a80320cc73aefa0bb2c1584b7d1df.zip
+version: '0.1'
+state: visible

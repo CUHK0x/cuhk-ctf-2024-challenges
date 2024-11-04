@@ -1,0 +1,23 @@
+name: Alternative Encipherment Strategy
+author: Jackylkk2003
+category: Cryptography
+description: When AES meets another AES.
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24063
+flags:
+- cuhk24ctf{m4yb3_key_r3u5e_1s_r3a11y_no7_4_g0od_id3a}
+tags:
+- 'Author: Jackylkk2003'
+- "\u2605\u2605\u2606\u2606\u2606"
+files:
+- 63_alternative-encipherment-strategy_b9f985e765a3d07f268b5b07e472c26f.zip
+version: '0.1'
+state: visible

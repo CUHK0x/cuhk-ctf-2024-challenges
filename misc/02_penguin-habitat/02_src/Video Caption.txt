@@ -1,0 +1,8 @@
+This video is used for the "Find the Author" challenge in the CUHK Cybersecurity CTF 2024 competition, and is for educational purposes only.
+Credits goes to the respective owners.
+
+"Never Gonna Give You Up"
+Music by Rick Ashley
+Link to original music video: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+Challenge made by p3n9uin

@@ -1,0 +1,10 @@
+services:
+  krev:
+    build: .
+    ports:
+      - 24040:9999
+    networks:
+      - default
+
+networks:
+  default:

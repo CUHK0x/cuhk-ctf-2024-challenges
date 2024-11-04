@@ -1,0 +1,6 @@
+services:
+  secret-server-bot:
+    build: .
+    volumes:
+      - './database.db:/app/database.db'
+      - './discord.log:/app/discord.log'

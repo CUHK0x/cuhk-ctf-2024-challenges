@@ -1,0 +1,23 @@
+name: Network Traffic Analyst
+author: chemistrying
+category: Web Exploitation
+description: Are you a qualified network traffic analyst? Solve this challenge to
+  find out.
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: '1'
+host: null
+connection_info: nc localhost 24051
+flags:
+- cuhk24ctf{C@pture_Th3_C1ty_With_Ur_Trafik_Ann@1y5ing_SqkilLs}
+tags:
+- 'Author: chemistrying'
+- "\u2605\u2606\u2606\u2606\u2606"
+files: []
+version: '0.1'
+state: visible

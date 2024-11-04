@@ -1,0 +1,28 @@
+name: Laboratory Safety
+author: rain251
+category: Cryptography
+description: 'Please decrypt the ROT13 and other encryption to read the laboratory
+  rule before entering the laboratory
+
+
+  Note: When you find the flag, please wrap it in cuhk24ctf{FLAGHOLDER} format. The
+  flag will be in capital letters.'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{SAFETYISVERYVERYIMPORTANT}
+tags:
+- 'Author: rain251'
+- "\u2605\u2606\u2606\u2606\u2606"
+files:
+- 56_laboratory-safety_69faa65971d850bbd4f5274e4f5112d9.zip
+version: '0.1'
+state: visible

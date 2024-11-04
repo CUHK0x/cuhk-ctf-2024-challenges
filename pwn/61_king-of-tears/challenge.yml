@@ -1,0 +1,24 @@
+name: King of Tears
+author: p3n9uin
+category: Binary Exploitation
+description: p3n9uin is good at acting, such that he rarely cries. Can you make him
+  cry?
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: tcp
+host: null
+connection_info: nc localhost 24061
+flags:
+- cuhk24ctf{kiN9s_n_qUe3ns_0f_teAr5}
+tags:
+- 'Author: p3n9uin'
+- "\u2605\u2606\u2606\u2606\u2606"
+files:
+- 61_king-of-tears_34905e3b03ee59f973bab094215c59fb.zip
+version: '0.1'
+state: visible

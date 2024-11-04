@@ -1,0 +1,25 @@
+name: Graduation
+author: p3n9uin
+category: Miscellaneous
+description: 'Thank you for joining the CUHK Cybersecurity CTF 2024 competition!
+
+  Your feedback on the CTF is crucial to us the organizers. Please fill in the [feedback
+  form](https://forms.gle/8eXY36NwbfekyKnz8) to get an easy flag!'
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 45
+  minimum: 100
+image: null
+protocol: null
+host: null
+connection_info: null
+flags:
+- cuhk24ctf{thAnks_f0r_p1A7in9_the_fir5t_3vEr_CUHK_CTF}
+tags:
+- 'Author: p3n9uin'
+- "\u2606\u2606\u2606\u2606\u2606"
+files: []
+version: '0.1'
+state: visible

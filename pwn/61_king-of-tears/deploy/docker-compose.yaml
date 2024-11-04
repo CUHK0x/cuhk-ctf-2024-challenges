@@ -1,0 +1,10 @@
+services:
+  61_chall:
+    build: .
+    ports:
+      - 24061:9999
+    networks:
+      - default
+
+networks:
+  default:
