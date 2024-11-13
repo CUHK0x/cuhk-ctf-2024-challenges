@@ -1,0 +1,10 @@
+services:
+  alice-bob:
+    build: .
+    ports:
+      - 24016:1337
+    networks:
+      - default
+
+networks:
+  default:

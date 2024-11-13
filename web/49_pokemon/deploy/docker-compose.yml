@@ -1,0 +1,43 @@
+services:
+  pokemon-frontend:
+    build:
+      context: ./frontend
+    restart: on-failure:10
+    ports:
+      - '24049:80'
+    depends_on:
+      pokemon-backend:
+        condition: service_healthy
+  pokemon-backend:
+    build:
+      context: ./backend
+    restart: on-failure:10
+    volumes:
+      - './backend/images/:/app/images/'
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:5000/api/health || exit 1"]
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+      start_period: 10s
+    depends_on:
+      pokemon-graphql-workers:
+        condition: service_healthy
+  pokemon-graphql:
+    build:
+      context: ./balancer
+    restart: on-failure:10
+    depends_on:
+      pokemon-graphql-workers:
+        condition: service_healthy
+  pokemon-graphql-workers:
+    build:
+      context: ./graphql
+    deploy: {resources: {limits: {cpus: '1', memory: 6144M}}}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:4001/health || exit 1"]
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+  

@@ -1,0 +1,10 @@
+services:
+  children-aarch64:
+    build: .
+    ports:
+      - 24042:9999
+    networks:
+      - default
+
+networks:
+  default:

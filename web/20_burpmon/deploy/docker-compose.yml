@@ -1,0 +1,8 @@
+services:
+  burpmon:
+    build: .
+    environment:
+      - FLAG=cuhk24ctf{Did_U_BURP_to_GET_FLAG_frum_gammAAAAAAAAAAAAAAAAAAAAAAAAAmon_asdflk;dkjfkl;j}
+      - PORT=8080
+    ports:
+      - 24020:8080

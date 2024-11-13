@@ -1,0 +1,8 @@
+services:
+  chall:
+    image: chall
+    ports:
+      - "24018:9999"
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -1,0 +1,19 @@
+services:
+  xclass:
+    build: .
+    ports:
+      - "24013:24013"
+    deploy: {resources: {limits: {cpus: '1', memory: 512M}}}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python3 -c 'import urllib.request; urllib.request.urlopen(\"http://localhost:24013\")'"]
+      interval: 30s
+      timeout: 5s
+      retries: 1
+      start_period: 30s
+    shm_size: 2g
+  restarter:
+    image: docker:cli
+    volumes: ["/var/run/docker.sock:/var/run/docker.sock"]
+    command: ["/bin/sh", "-c", "while true; do sleep 30m; docker restart cuhk-ctf-2024-dev-xclass-1; done"]
+    restart: unless-stopped

@@ -1,0 +1,10 @@
+services:
+  super-shuffler:
+    build: .
+    ports:
+      - 24066:9999
+    networks:
+      - default
+
+networks:
+  default:

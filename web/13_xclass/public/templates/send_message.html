@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send a message to the principal!</title>
+</head>
+<body>
+    <h1>Send a message to the principal!</h1>
+    <form action="/send" method="post"><label for="id_message">Message:</label><br><textarea name="message" id="id_message" placeholder="Kind HTML accepted!" rows="10" cols="60"></textarea><br><input type="submit" value="Submit"></form>
+    {% if hint %}
+    <strong style="color:red">{{ hint }}<br>
+    {% endif %}
+    {% if message_url %}
+    <a href="{{message_url}}">http://{{host}}{{message_url}}</a></strong>
+    {% endif %}
+</body>
+</html>

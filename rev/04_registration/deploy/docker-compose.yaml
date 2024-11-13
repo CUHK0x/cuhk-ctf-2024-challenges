@@ -1,0 +1,10 @@
+services:
+  registration:
+    build: .
+    ports:
+      - 24004:1337
+    networks:
+      - default
+
+networks:
+  default:

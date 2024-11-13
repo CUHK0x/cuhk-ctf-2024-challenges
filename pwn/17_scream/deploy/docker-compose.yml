@@ -1,0 +1,8 @@
+services:
+  scream:
+    image: scream
+    ports:
+      - "24017:9999"
+    build:
+      context: .
+      dockerfile: ./Dockerfile

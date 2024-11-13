@@ -1,0 +1,3 @@
+[submodule "forens/46_meandering-binaries/gen/lib/img2binvis"]
+	path = forens/46_meandering-binaries/gen/lib/img2binvis
+	url = http://github.com/FieryRMS/img2binvis.git

@@ -1,0 +1,32 @@
+{
+    "items": [
+        {
+            "name": "Apple",
+            "description": "An apple is a round, edible fruit produced by an apple tree."
+        },
+        {
+            "name": "Orange",
+            "description": "An orange, also called sweet orange to distinguish it from the bitter orange, is the fruit of a tree in the family Rutaceae."
+        },
+        {
+            "name": "\"Greensleeves\"",
+            "description": "\"Greensleeves\" is a traditional English folk song, famous for being the opening theme of public exams."
+        },
+        {
+            "name": "Penguin",
+            "description": "Penguins are a group of aquatic flightless birds from the family Spheniscidae of the order Sphenisciformes."
+        },
+        {
+            "name": "Gammamon",
+            "description": "Gammamon is a Ceratopsian Digimon. It is a very unusual, young, white Digimon that was recently discovered."
+        },
+        {
+            "name": "\"Lemon Tree\"",
+            "description": "\"Lemon Tree\" is a song by German band Fool\\'s Garden from their third album, Dish of the Day (1995)."
+        },
+        {
+            "name": "Aho-Corasick algorithm",
+            "description": "In computer science, the Aho-Corasick algorithm is a string-searching algorithm invented by Alfred V. Aho and Margaret J. Corasick in 1975. It is a kind of dictionary-matching algorithm that locates elements of a finite set of strings (the \"dictionary\") within an input text."
+        }
+    ]
+}

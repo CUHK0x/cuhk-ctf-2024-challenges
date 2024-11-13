@@ -1,0 +1,8 @@
+../47_flag.txt
+ilovemyuncle
+../temp/enc
+../temp/enc
+ilovemyuncle
+../temp/dec
+../temp/enc
+../temp/rockyou2.txt

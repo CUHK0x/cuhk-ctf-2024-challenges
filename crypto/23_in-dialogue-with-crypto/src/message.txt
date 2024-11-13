@@ -1,0 +1,17 @@
+Note: This is a markdown file.
+
+Capture The Flag (CTF) is a cybersecurity competition that simulates real-world hacking scenarios in a controlled environment. Participants, often referred to as ethical hackers or security enthusiasts, are tasked with finding and exploiting vulnerabilities in various systems to uncover hidden flags. These flags are typically strings of text that serve as proof of successful exploitation and are used to score points. CTF competitions are not only challenging but also educational, providing participants with hands-on experience in cybersecurity techniques and methodologies.
+
+The first part of the flag is `cuhk24ctf{HALLO_uwu_kvn`.
+
+In CTF competitions, participants encounter a wide range of challenges that fall into distinct categories, each testing different skill sets. Web exploitation challenges focus on identifying and exploiting vulnerabilities in web applications, such as SQL injection, cross-site scripting (XSS), and server-side request forgery (SSRF). Cryptography challenges involve deciphering encoded messages, breaking encryption algorithms, and analyzing cryptographic protocols. Binary exploitation challenges require participants to exploit flaws in binary executables, such as buffer overflows, format string vulnerabilities, and shellcode injection. Forensics challenges revolve around analyzing digital artifacts, extracting hidden information from files, and recovering deleted data. Reverse engineering challenges task participants with understanding the functionality of software by dissecting and analyzing its code.
+
+The second part of the flag is `ow_da_tor1cku_ando_da_e`.
+
+The skills acquired and honed through CTF competitions are not limited to the realm of cybersecurity but can also be applied in other areas, such as gaming. In the popular Minecraft server Hypixel Skyblock, players can utilize their knowledge of binary exploitation and reverse engineering to create custom modifications (mods) that enhance gameplay. By understanding the game's underlying code and mechanics, players can develop innovative mods that introduce new features, improve performance, and even automate certain tasks. Additionally, cryptography skills can be employed to create secure trading systems within the game, ensuring the integrity and confidentiality of in-game transactions.
+
+The third part of the flag is `ssenzi_ofu_smol_exp_att`.
+
+In essence, participating in CTF competitions offers a unique opportunity to develop and refine a diverse set of technical skills essential in the field of cybersecurity and beyond. Whether mastering the art of web exploitation, delving into the intricacies of cryptography, unraveling the complexities of binary exploitation, deciphering digital forensics puzzles, or unraveling the mysteries of reverse engineering, CTF enthusiasts embark on a journey of continuous learning and discovery. These competitions not only foster a spirit of collaboration and camaraderie among participants but also serve as a platform for cultivating problem-solving abilities, critical thinking skills, and a deep understanding of cybersecurity principles. Through CTF competitions, individuals can explore the fascinating world of cybersecurity, push the boundaries of their knowledge and capabilities, and embark on a rewarding journey of skill development and personal growth.
+
+The final part of the flag is `a3kuwu_vary_fevvy_guud}`.
