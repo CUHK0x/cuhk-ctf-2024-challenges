@@ -1,0 +1,7 @@
+linux:
+	git clone --depth 1 -b v6.10.7 https://github.com/gregkh/linux
+	make defconfig; make -j16
+buildroot:
+	https://buildroot.org/downloads/buildroot-2024.05.2.tar.gz
+	modify /etc/network/interfaces and /init to enable network
+
